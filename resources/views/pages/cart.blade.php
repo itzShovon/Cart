@@ -117,8 +117,8 @@
                     @foreach ($products as $product)
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img class="bd-placeholder-img card-img-top"
-                                    src="{{ asset('storage/products/default.jpg') }}" alt="Thumbnail" srcset="">
+                                {{-- <img class="bd-placeholder-img card-img-top" src="{{ asset('storage/products/default.jpg') }}" alt="Thumbnail" srcset=""> --}}
+                                <img class="bd-placeholder-img card-img-top" src="{{ $product->image }}" alt="Thumbnail" srcset="">
                                 <div class="card-body">
                                     <p class="text-right font-weight-lighter">{{ $product->size }}</p>
 
